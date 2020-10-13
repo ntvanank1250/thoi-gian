@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <td>Bay gio la: </td>
+        <td id="gio" sty></td>
+        <tr></tr>
+        <td>Hom nay ngay: </td>
+   
+        <td id="ngay"></td>
+    </table>
+    <script>
+        let today = new Date();
+        let date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+        let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        document.getElementById("gio").innerText = time;
+        document.getElementById("ngay").innerText = date;
+        
+    
+    </script>
+</body>
+
+</html>
